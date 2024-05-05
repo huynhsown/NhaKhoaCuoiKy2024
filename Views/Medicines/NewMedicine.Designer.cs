@@ -500,6 +500,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(673, 480);
             Controls.Add(btn_add);
             Controls.Add(btn_cancel);
@@ -527,8 +528,11 @@
             Controls.Add(label1);
             Controls.Add(tb_medicineid);
             Controls.Add(tb_name);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "NewMedicine";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "NewMedicine";
+            Load += NewMedicine_Load;
             ((System.ComponentModel.ISupportInitialize)pb_name).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_importprice).EndInit();

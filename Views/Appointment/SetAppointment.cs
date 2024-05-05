@@ -176,5 +176,15 @@ namespace NhaKhoaCuoiKy.Views.Appointment
                 }
             }
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            loadForm(createAppointment = new CreateAppointment(emptySchedules, monthCalendar.SelectionRange.Start, 0, doctor_id));
+        }
     }
 }

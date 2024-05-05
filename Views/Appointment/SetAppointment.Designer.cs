@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             monthCalendar = new MonthCalendar();
             panel1 = new Panel();
+            btn_back = new Guna.UI2.WinForms.Guna2CircleButton();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             btn_search = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -56,7 +59,6 @@
             col_btn_detail = new DataGridViewButtonColumn();
             col_btn_delete = new DataGridViewButtonColumn();
             schedule_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             guna2Panel1.SuspendLayout();
@@ -65,12 +67,13 @@
             // 
             // monthCalendar
             // 
-            monthCalendar.Location = new Point(36, 51);
+            monthCalendar.Location = new Point(44, 99);
             monthCalendar.Name = "monthCalendar";
             monthCalendar.TabIndex = 0;
             // 
             // panel1
             // 
+            panel1.Controls.Add(btn_back);
             panel1.Controls.Add(guna2Button2);
             panel1.Controls.Add(btn_search);
             panel1.Controls.Add(guna2HtmlLabel1);
@@ -81,10 +84,48 @@
             panel1.Size = new Size(334, 806);
             panel1.TabIndex = 1;
             // 
+            // btn_back
+            // 
+            btn_back.DisabledState.BorderColor = Color.DarkGray;
+            btn_back.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_back.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_back.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_back.FillColor = Color.FromArgb(17, 34, 71);
+            btn_back.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_back.ForeColor = Color.White;
+            btn_back.Image = Properties.Resources.icons8_back_96;
+            btn_back.Location = new Point(26, 14);
+            btn_back.Name = "btn_back";
+            btn_back.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            btn_back.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btn_back.Size = new Size(40, 40);
+            btn_back.TabIndex = 11;
+            btn_back.Click += btn_back_Click;
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.BorderRadius = 5;
+            guna2Button2.CustomizableEdges = customizableEdges2;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.FromArgb(17, 34, 71);
+            guna2Button2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.ImageAlign = HorizontalAlignment.Left;
+            guna2Button2.Location = new Point(118, 401);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            guna2Button2.Size = new Size(109, 36);
+            guna2Button2.TabIndex = 10;
+            guna2Button2.Text = "Đặt lịch";
+            guna2Button2.Click += guna2Button2_Click;
+            // 
             // btn_search
             // 
             btn_search.BorderRadius = 5;
-            btn_search.CustomizableEdges = customizableEdges3;
+            btn_search.CustomizableEdges = customizableEdges4;
             btn_search.DisabledState.BorderColor = Color.DarkGray;
             btn_search.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_search.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -93,9 +134,9 @@
             btn_search.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btn_search.ForeColor = Color.White;
             btn_search.ImageAlign = HorizontalAlignment.Left;
-            btn_search.Location = new Point(110, 270);
+            btn_search.Location = new Point(118, 318);
             btn_search.Name = "btn_search";
-            btn_search.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_search.ShadowDecoration.CustomizableEdges = customizableEdges5;
             btn_search.Size = new Size(109, 36);
             btn_search.TabIndex = 9;
             btn_search.Text = "Chọn";
@@ -105,7 +146,7 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(18, 12);
+            guna2HtmlLabel1.Location = new Point(26, 60);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(127, 27);
             guna2HtmlLabel1.TabIndex = 1;
@@ -113,7 +154,7 @@
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges5;
+            guna2Button1.CustomizableEdges = customizableEdges6;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -122,7 +163,7 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Location = new Point(486, 731);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges7;
             guna2Button1.Size = new Size(225, 56);
             guna2Button1.TabIndex = 2;
             guna2Button1.Text = "guna2Button1";
@@ -144,10 +185,10 @@
             guna2Panel1.BorderRadius = 15;
             guna2Panel1.BorderThickness = 1;
             guna2Panel1.Controls.Add(data_bacsi);
-            guna2Panel1.CustomizableEdges = customizableEdges7;
+            guna2Panel1.CustomizableEdges = customizableEdges8;
             guna2Panel1.Location = new Point(42, 51);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges9;
             guna2Panel1.Size = new Size(786, 720);
             guna2Panel1.TabIndex = 11;
             // 
@@ -288,25 +329,6 @@
             schedule_label.TabIndex = 10;
             schedule_label.Text = "Lịch trình:";
             // 
-            // guna2Button2
-            // 
-            guna2Button2.BorderRadius = 5;
-            guna2Button2.CustomizableEdges = customizableEdges1;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.FromArgb(17, 34, 71);
-            guna2Button2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.ImageAlign = HorizontalAlignment.Left;
-            guna2Button2.Location = new Point(110, 353);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button2.Size = new Size(109, 36);
-            guna2Button2.TabIndex = 10;
-            guna2Button2.Text = "Đặt lịch";
-            // 
             // SetAppointment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -347,5 +369,6 @@
         private DataGridViewButtonColumn col_btn_detail;
         private DataGridViewButtonColumn col_btn_delete;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        public Guna.UI2.WinForms.Guna2CircleButton btn_back;
     }
 }

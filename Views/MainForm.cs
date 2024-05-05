@@ -4,14 +4,21 @@ using NhaKhoaCuoiKy.Views.Employee;
 using NhaKhoaCuoiKy.Views.Employee.Medicines;
 using NhaKhoaCuoiKy.Views.Appointment;
 using NhaKhoaCuoiKy.Views.Service;
+using NhaKhoaCuoiKy.Models;
+using NhaKhoaCuoiKy.Views.LogIn;
+using System.Text;
 
 namespace NhaKhoaCuoiKy.Views
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        UserModel userAccount;
+        LoginForm loginForm;
+        public MainForm(UserModel userAccount, LoginForm loginForm)
         {
             InitializeComponent();
+            this.userAccount = userAccount;
+            this.loginForm = loginForm;
         }
 
         private Form currentForm;
@@ -26,6 +33,13 @@ namespace NhaKhoaCuoiKy.Views
         private void MainForm_Load(object sender, EventArgs e)
         {
             panel_btn_employee.AutoSize = true;
+            if(userAccount.decentralization != 0)
+            {
+                btn_employee.Visible = false;
+                btn_employee.Enabled = false;
+                btn_service.Visible = false;
+                btn_service.Enabled = false;
+            }
         }
 
         public void openChildForm(Form childForm)
@@ -83,17 +97,7 @@ namespace NhaKhoaCuoiKy.Views
         {
             closeAllPanel();
             patient?.Close();
-            openChildForm(patient = new Patient(this));
-        }
-
-        private void btn_exit_MouseEnter(object sender, EventArgs e)
-        {
-            btn_exit.FillColor = Color.Red;
-        }
-
-        private void btn_exit_MouseLeave(object sender, EventArgs e)
-        {
-            buttonMouseLeave(btn_exit);
+            openChildForm(patient = new Patient(this, userAccount));
         }
 
         private void btn_employee_MouseEnter(object sender, EventArgs e)
@@ -132,7 +136,7 @@ namespace NhaKhoaCuoiKy.Views
             List<Panel> panelList = new List<Panel>() { panel_btn_employee };
             List<Guna2Button> guna2Buttons = new List<Guna2Button>()
             { btn_home,
-                btn_exit,
+                btn_logout,
                 btn_employee,
                 btn_patient
             };
@@ -160,7 +164,7 @@ namespace NhaKhoaCuoiKy.Views
         {
             closeAllPanel();
             service?.Close();
-            openChildForm(service = new Servicee(this));
+            openChildForm(service = new Servicee(this, userAccount));
         }
 
         private void btn_employee_Doctor_Click(object sender, EventArgs e)
@@ -190,14 +194,41 @@ namespace NhaKhoaCuoiKy.Views
         {
             closeAllPanel();
             medicine?.Close();
-            openChildForm(medicine = new Medicine(this));
+            openChildForm(medicine = new Medicine(this, userAccount));
 
         }
         private void btn_appointment_Click(object sender, EventArgs e)
         {
+            if(userAccount.decentralization == 1)
+            {
+                SetAppointment sa = new SetAppointment(userAccount.employeeID, this);
+                sa.btn_back.Visible = false;
+                sa.btn_back.Enabled = false;
+                closeAllPanel();
+                openChildForm(sa);
+                return;
+            }
             closeAllPanel();
             newAppointment?.Close();
             openChildForm(newAppointment = new AppointMent(this));
+        }
+
+        private void btn_logout_MouseEnter(object sender, EventArgs e)
+        {
+            btn_logout.FillColor = Color.Red;
+        }
+
+        private void btn_logout_MouseLeave(object sender, EventArgs e)
+        {
+            buttonMouseLeave(btn_logout);
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            loginForm.Owner = null;
+            Close();
+            loginForm.removeInfoWhenLogout();
+            loginForm.Show();
         }
     }
 }

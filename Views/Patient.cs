@@ -20,11 +20,13 @@ namespace NhaKhoaCuoiKy.Views
         private Validate validate = new Validate();
         private MainForm mainForm;
         PatientModel pm;
+        UserModel userAccount;
 
-        public Patient(MainForm mainForm)
+        public Patient(MainForm mainForm, UserModel userAccount)
         {
             InitializeComponent();
             this.mainForm = mainForm;
+            this.userAccount = userAccount;
         }
 
         private void loadForm(Form form)
@@ -135,10 +137,6 @@ namespace NhaKhoaCuoiKy.Views
                     data_benhNhan.Rows.Add(maBN, hoTen, soDienThoai, ngaySinh, gioiTinh, diaChi);
                 }
             }
-            else
-            {
-                MessageBox.Show("Khong co thong tin!", "Thong Bao", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
         private void searchByID()
         {
@@ -151,6 +149,10 @@ namespace NhaKhoaCuoiKy.Views
                 }
                 DataTable dt = pm.getByID(int.Parse(tb_filter_search.Text.Trim()));
                 addToDataGrid(dt);
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy bệnh nhân", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
             catch (Exception ex)
             {
@@ -162,6 +164,10 @@ namespace NhaKhoaCuoiKy.Views
             try
             {
                 DataTable dt = pm.getByName(tb_filter_search.Text.Trim());
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy bệnh nhân", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
                 addToDataGrid(dt);
             }
             catch (Exception ex)
@@ -180,6 +186,10 @@ namespace NhaKhoaCuoiKy.Views
                     return;
                 }
                 DataTable dt = pm.getByPhone(tb_filter_search.Text.Trim());
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy bệnh nhân", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
                 addToDataGrid(dt);
             }
             catch (Exception ex)
@@ -190,11 +200,28 @@ namespace NhaKhoaCuoiKy.Views
 
         private void data_benhNhan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int patienID = Convert.ToInt32(data_benhNhan.Rows[e.RowIndex].Cells[0].Value);
             if (data_benhNhan.Columns[e.ColumnIndex].Name == "col_btn_addRecord")
-            {
-                int patienID = Convert.ToInt32(data_benhNhan.Rows[e.RowIndex].Cells[0].Value);
-                mainForm.openChildFormHaveData(new AddNewRecord(patienID));
+            {                
+                mainForm.openChildFormHaveData(new AddNewRecord(patienID, userAccount));
             }
+            if (data_benhNhan.Columns[e.ColumnIndex].Name == "col_btn_Info")
+            {
+                loadForm(new EditPatient(patienID, this));
+            }
+            if (data_benhNhan.Columns[e.ColumnIndex].Name == "col_btn_invoice")
+            {
+                mainForm.openChildFormHaveData(new AddInvoice(patienID, mainForm));
+            }
+            if(data_benhNhan.Columns[e.ColumnIndex].Name == "col_btn_history")
+            {
+
+            }
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

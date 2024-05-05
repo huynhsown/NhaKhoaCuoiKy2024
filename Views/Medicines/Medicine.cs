@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using NhaKhoaCuoiKy.Helpers;
+using NhaKhoaCuoiKy.Models;
 using NhaKhoaCuoiKy.Views.Medicines;
 using System;
 using System.Collections.Generic;
@@ -17,34 +18,42 @@ namespace NhaKhoaCuoiKy.Views.Employee.Medicines
     {
         MainForm mainForm;
         NewMedicine newMedicine;
+        UserModel userAccount;
         public Medicine()
         {
             InitializeComponent();
         }
-        public Medicine(MainForm mainForm)
+        public Medicine(MainForm mainForm, UserModel userAccount)
         {
             InitializeComponent();
             this.mainForm = mainForm;
+            this.userAccount = userAccount;
         }
+
+        void loadForm(Form form)
+        {
+            FormBackGround formBackGround = new FormBackGround(mainForm);
+            try
+            {
+                using (form)
+                {
+                    formBackGround.Owner = mainForm;
+                    formBackGround.Show();
+                    form.Owner = formBackGround;
+                    form.ShowDialog();
+                    formBackGround.Dispose();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Đã xảy ra lỗi! Vui lòng thử lại.", "Thông báo",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void button_themmoi_Click(object sender, EventArgs e)
         {
-            newMedicine?.Close();
-            newMedicine = new NewMedicine();
-            newMedicine.Owner = this;
-            newMedicine.Show();
-            newMedicine.eventAddMedicine += (s, e) =>
-            {
-                DynamicParameters p = new DynamicParameters();
-                string maThuoc = p.Get<string>("@MaThuoc");
-                string tenThuoc = p.Get<string>("@TenThuoc");
-                string hDSD = p.Get<string>("@HuongDanSD");
-                string thanhPhan = p.Get<string>("@ThanhPhan");
-                int giaNhap = p.Get<int>("@GiaNhap");
-                int giaBan = p.Get<int>("@GiaBan");
-                int soLuong = p.Get<int>("SoLuong");
-                string congTy = p.Get<string>("@CongTy");
-                data_thuoc.Rows.Add(maThuoc, tenThuoc, hDSD, giaBan, congTy);
-            };
+            loadForm(new NewMedicine(this));
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -72,7 +81,7 @@ namespace NhaKhoaCuoiKy.Views.Employee.Medicines
 
         }
 
-        private void loadMedicine(DataTable dt)
+        public void loadMedicine(DataTable dt)
         {
 
             data_thuoc.Rows.Clear();

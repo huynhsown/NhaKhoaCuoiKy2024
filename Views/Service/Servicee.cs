@@ -19,15 +19,17 @@ namespace NhaKhoaCuoiKy.Views.Service
     {
         private MainForm mainForm;
         private DynamicParameters p;
+        UserModel userAccount;
         public Servicee()
         {
             InitializeComponent();
         }
 
-        public Servicee(MainForm mainForm)
+        public Servicee(MainForm mainForm, UserModel userAccount)
         {
             InitializeComponent();
             this.mainForm = mainForm;
+            this.userAccount = userAccount;
         }
 
         private void Servicee_Load(object sender, EventArgs e)

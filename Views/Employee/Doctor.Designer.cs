@@ -53,10 +53,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             cb_filter = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -64,21 +60,21 @@
             tb_filter_search = new Guna.UI2.WinForms.Guna2TextBox();
             guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             data_bacSi = new Guna.UI2.WinForms.Guna2DataGridView();
-            MaBS = new DataGridViewTextBoxColumn();
-            HoVaTen = new DataGridViewTextBoxColumn();
-            HocVi = new DataGridViewTextBoxColumn();
-            ChuyenMon = new DataGridViewTextBoxColumn();
+            MaBenhNhan = new DataGridViewTextBoxColumn();
+            HoTen = new DataGridViewTextBoxColumn();
             SoDienThoai = new DataGridViewTextBoxColumn();
             NgaySinh = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
             GioiTinh = new DataGridViewTextBoxColumn();
             DiaChi = new DataGridViewTextBoxColumn();
+            col_btn_addRecord = new DataGridViewButtonColumn();
+            col_btn_Info = new DataGridViewButtonColumn();
             button_themmoi = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button_save = new Guna.UI2.WinForms.Guna2Button();
             guna2Button_print = new Guna.UI2.WinForms.Guna2Button();
             btn_refresh = new Guna.UI2.WinForms.Guna2Button();
-            bt_remove = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1.SuspendLayout();
             guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)data_bacSi).BeginInit();
@@ -194,47 +190,52 @@
             // 
             // data_bacSi
             // 
+            data_bacSi.AllowUserToAddRows = false;
+            data_bacSi.AllowUserToDeleteRows = false;
+            data_bacSi.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(128, 128, 255);
             dataGridViewCellStyle1.SelectionForeColor = Color.Black;
             data_bacSi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(17, 34, 71);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(17, 34, 71);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             data_bacSi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            data_bacSi.ColumnHeadersHeight = 42;
+            data_bacSi.ColumnHeadersHeight = 46;
             data_bacSi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            data_bacSi.Columns.AddRange(new DataGridViewColumn[] { MaBS, HoVaTen, HocVi, ChuyenMon, SoDienThoai, NgaySinh, GioiTinh, DiaChi });
+            data_bacSi.Columns.AddRange(new DataGridViewColumn[] { MaBenhNhan, HoTen, SoDienThoai, NgaySinh, Column1, Column2, GioiTinh, DiaChi, col_btn_addRecord, col_btn_Info });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = Color.Transparent;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(128, 128, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             data_bacSi.DefaultCellStyle = dataGridViewCellStyle3;
             data_bacSi.GridColor = Color.FromArgb(231, 229, 255);
-            data_bacSi.Location = new Point(25, 68);
+            data_bacSi.Location = new Point(35, 60);
             data_bacSi.Name = "data_bacSi";
             data_bacSi.ReadOnly = true;
+            data_bacSi.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.BackColor = Color.White;
             dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = Color.LightBlue;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
             dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
             data_bacSi.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             data_bacSi.RowHeadersVisible = false;
-            data_bacSi.RowHeadersWidth = 51;
+            data_bacSi.RowHeadersWidth = 55;
             data_bacSi.RowTemplate.Height = 29;
-            data_bacSi.Size = new Size(971, 415);
-            data_bacSi.TabIndex = 4;
+            data_bacSi.Size = new Size(937, 414);
+            data_bacSi.TabIndex = 5;
             data_bacSi.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             data_bacSi.ThemeStyle.AlternatingRowsStyle.Font = null;
             data_bacSi.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
@@ -247,7 +248,7 @@
             data_bacSi.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             data_bacSi.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             data_bacSi.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            data_bacSi.ThemeStyle.HeaderStyle.Height = 42;
+            data_bacSi.ThemeStyle.HeaderStyle.Height = 46;
             data_bacSi.ThemeStyle.ReadOnly = true;
             data_bacSi.ThemeStyle.RowsStyle.BackColor = Color.White;
             data_bacSi.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -256,63 +257,85 @@
             data_bacSi.ThemeStyle.RowsStyle.Height = 29;
             data_bacSi.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             data_bacSi.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            data_bacSi.VirtualMode = true;
             // 
-            // MaBS
+            // MaBenhNhan
             // 
-            MaBS.HeaderText = "Mã Bác Sĩ ";
-            MaBS.MinimumWidth = 6;
-            MaBS.Name = "MaBS";
-            MaBS.ReadOnly = true;
+            MaBenhNhan.HeaderText = "Mã BS";
+            MaBenhNhan.MinimumWidth = 6;
+            MaBenhNhan.Name = "MaBenhNhan";
+            MaBenhNhan.ReadOnly = true;
             // 
-            // HoVaTen
+            // HoTen
             // 
-            HoVaTen.HeaderText = "Họ Và Tên";
-            HoVaTen.MinimumWidth = 6;
-            HoVaTen.Name = "HoVaTen";
-            HoVaTen.ReadOnly = true;
-            // 
-            // HocVi
-            // 
-            HocVi.HeaderText = "Học Vị";
-            HocVi.MinimumWidth = 6;
-            HocVi.Name = "HocVi";
-            HocVi.ReadOnly = true;
-            // 
-            // ChuyenMon
-            // 
-            ChuyenMon.HeaderText = "Chuyên Môn";
-            ChuyenMon.MinimumWidth = 6;
-            ChuyenMon.Name = "ChuyenMon";
-            ChuyenMon.ReadOnly = true;
+            HoTen.FillWeight = 110.4278F;
+            HoTen.HeaderText = "Họ Tên";
+            HoTen.MinimumWidth = 6;
+            HoTen.Name = "HoTen";
+            HoTen.ReadOnly = true;
             // 
             // SoDienThoai
             // 
-            SoDienThoai.HeaderText = "Số Điện Thoại";
+            SoDienThoai.FillWeight = 110.4278F;
+            SoDienThoai.HeaderText = "Học vị";
             SoDienThoai.MinimumWidth = 6;
             SoDienThoai.Name = "SoDienThoai";
             SoDienThoai.ReadOnly = true;
             // 
             // NgaySinh
             // 
-            NgaySinh.HeaderText = "Ngày Sinh";
+            NgaySinh.FillWeight = 110.4278F;
+            NgaySinh.HeaderText = "Chuyên môn";
             NgaySinh.MinimumWidth = 6;
             NgaySinh.Name = "NgaySinh";
             NgaySinh.ReadOnly = true;
             // 
+            // Column1
+            // 
+            Column1.HeaderText = "Số điện thoại";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Ngày sinh";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
             // GioiTinh
             // 
-            GioiTinh.HeaderText = "Giới Tính";
+            GioiTinh.FillWeight = 110.4278F;
+            GioiTinh.HeaderText = "Giới tính";
             GioiTinh.MinimumWidth = 6;
             GioiTinh.Name = "GioiTinh";
             GioiTinh.ReadOnly = true;
             // 
             // DiaChi
             // 
-            DiaChi.HeaderText = "Địa Chỉ";
+            DiaChi.FillWeight = 110.4278F;
+            DiaChi.HeaderText = "Địa chỉ";
             DiaChi.MinimumWidth = 6;
             DiaChi.Name = "DiaChi";
             DiaChi.ReadOnly = true;
+            // 
+            // col_btn_addRecord
+            // 
+            col_btn_addRecord.HeaderText = "Thêm Bệnh Án";
+            col_btn_addRecord.MinimumWidth = 6;
+            col_btn_addRecord.Name = "col_btn_addRecord";
+            col_btn_addRecord.ReadOnly = true;
+            col_btn_addRecord.Text = "Thêm";
+            col_btn_addRecord.UseColumnTextForButtonValue = true;
+            // 
+            // col_btn_Info
+            // 
+            col_btn_Info.HeaderText = "Xem thông tin";
+            col_btn_Info.MinimumWidth = 6;
+            col_btn_Info.Name = "col_btn_Info";
+            col_btn_Info.ReadOnly = true;
+            col_btn_Info.Text = "Xem";
+            col_btn_Info.UseColumnTextForButtonValue = true;
             // 
             // button_themmoi
             // 
@@ -375,31 +398,10 @@
             guna2Button4.TabIndex = 3;
             guna2Button4.Text = "Thêm mới";
             // 
-            // guna2Button_save
-            // 
-            guna2Button_save.BorderRadius = 5;
-            guna2Button_save.CustomizableEdges = customizableEdges17;
-            guna2Button_save.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button_save.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button_save.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button_save.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button_save.FillColor = Color.FromArgb(17, 34, 71);
-            guna2Button_save.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button_save.ForeColor = Color.White;
-            guna2Button_save.Image = (Image)resources.GetObject("guna2Button_save.Image");
-            guna2Button_save.ImageAlign = HorizontalAlignment.Left;
-            guna2Button_save.Location = new Point(952, 711);
-            guna2Button_save.Name = "guna2Button_save";
-            guna2Button_save.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button_save.Size = new Size(154, 36);
-            guna2Button_save.TabIndex = 3;
-            guna2Button_save.Text = "Lưu";
-            guna2Button_save.Click += guna2Button_save_Click;
-            // 
             // guna2Button_print
             // 
             guna2Button_print.BorderRadius = 5;
-            guna2Button_print.CustomizableEdges = customizableEdges19;
+            guna2Button_print.CustomizableEdges = customizableEdges17;
             guna2Button_print.DisabledState.BorderColor = Color.DarkGray;
             guna2Button_print.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button_print.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -409,9 +411,9 @@
             guna2Button_print.ForeColor = Color.White;
             guna2Button_print.Image = (Image)resources.GetObject("guna2Button_print.Image");
             guna2Button_print.ImageAlign = HorizontalAlignment.Left;
-            guna2Button_print.Location = new Point(796, 711);
+            guna2Button_print.Location = new Point(956, 711);
             guna2Button_print.Name = "guna2Button_print";
-            guna2Button_print.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2Button_print.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2Button_print.Size = new Size(150, 36);
             guna2Button_print.TabIndex = 7;
             guna2Button_print.Text = "In";
@@ -420,7 +422,7 @@
             // btn_refresh
             // 
             btn_refresh.BorderRadius = 5;
-            btn_refresh.CustomizableEdges = customizableEdges21;
+            btn_refresh.CustomizableEdges = customizableEdges19;
             btn_refresh.DisabledState.BorderColor = Color.DarkGray;
             btn_refresh.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_refresh.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -430,34 +432,13 @@
             btn_refresh.ForeColor = Color.White;
             btn_refresh.Image = (Image)resources.GetObject("btn_refresh.Image");
             btn_refresh.ImageAlign = HorizontalAlignment.Left;
-            btn_refresh.Location = new Point(637, 711);
+            btn_refresh.Location = new Point(781, 711);
             btn_refresh.Name = "btn_refresh";
-            btn_refresh.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btn_refresh.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btn_refresh.Size = new Size(153, 36);
             btn_refresh.TabIndex = 8;
             btn_refresh.Text = "Làm mới";
             btn_refresh.Click += btn_refresh_Click;
-            // 
-            // bt_remove
-            // 
-            bt_remove.BorderRadius = 5;
-            bt_remove.CustomizableEdges = customizableEdges23;
-            bt_remove.DisabledState.BorderColor = Color.DarkGray;
-            bt_remove.DisabledState.CustomBorderColor = Color.DarkGray;
-            bt_remove.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            bt_remove.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            bt_remove.FillColor = Color.FromArgb(17, 34, 71);
-            bt_remove.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            bt_remove.ForeColor = Color.White;
-            bt_remove.Image = (Image)resources.GetObject("bt_remove.Image");
-            bt_remove.ImageAlign = HorizontalAlignment.Left;
-            bt_remove.Location = new Point(478, 711);
-            bt_remove.Name = "bt_remove";
-            bt_remove.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            bt_remove.Size = new Size(153, 36);
-            bt_remove.TabIndex = 9;
-            bt_remove.Text = "Xóa";
-            bt_remove.Click += bt_remove_Click;
             // 
             // Doctor
             // 
@@ -465,11 +446,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1196, 759);
-            Controls.Add(bt_remove);
             Controls.Add(btn_refresh);
             Controls.Add(guna2Button_print);
             Controls.Add(label1);
-            Controls.Add(guna2Button_save);
             Controls.Add(guna2Button4);
             Controls.Add(guna2Button3);
             Controls.Add(guna2GroupBox1);
@@ -496,18 +475,18 @@
         private Guna.UI2.WinForms.Guna2Button button_themmoi;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button_save;
         private Guna.UI2.WinForms.Guna2Button guna2Button_print;
         private Guna.UI2.WinForms.Guna2Button btn_refresh;
-        private Guna.UI2.WinForms.Guna2Button bt_remove;
         private Guna.UI2.WinForms.Guna2DataGridView data_bacSi;
-        private DataGridViewTextBoxColumn MaBS;
-        private DataGridViewTextBoxColumn HoVaTen;
-        private DataGridViewTextBoxColumn HocVi;
-        private DataGridViewTextBoxColumn ChuyenMon;
+        private DataGridViewTextBoxColumn MaBenhNhan;
+        private DataGridViewTextBoxColumn HoTen;
         private DataGridViewTextBoxColumn SoDienThoai;
         private DataGridViewTextBoxColumn NgaySinh;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn GioiTinh;
         private DataGridViewTextBoxColumn DiaChi;
+        private DataGridViewButtonColumn col_btn_addRecord;
+        private DataGridViewButtonColumn col_btn_Info;
     }
 }
