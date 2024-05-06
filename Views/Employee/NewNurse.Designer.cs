@@ -767,6 +767,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(618, 636);
             Controls.Add(pb_phone);
             Controls.Add(pb_homenum);
