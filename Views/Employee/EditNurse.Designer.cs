@@ -1,6 +1,6 @@
 ﻿namespace NhaKhoaCuoiKy.Views.Employee
 {
-    partial class NewGuard
+    partial class EditNurse
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -55,8 +54,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            pb_homenum = new PictureBox();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pb_phone = new PictureBox();
+            pb_homenum = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox3 = new PictureBox();
             pb_tienluong = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -75,11 +80,15 @@
             tb_ward = new Guna.UI2.WinForms.Guna2TextBox();
             tb_homenum = new Guna.UI2.WinForms.Guna2TextBox();
             tb_sodienthoai = new Guna.UI2.WinForms.Guna2TextBox();
+            tb_chuyenmon = new Guna.UI2.WinForms.Guna2TextBox();
+            tb_hocvi = new Guna.UI2.WinForms.Guna2TextBox();
             tb_tienluong = new Guna.UI2.WinForms.Guna2TextBox();
             tb_vitrilamviec = new Guna.UI2.WinForms.Guna2TextBox();
             btn_cancel = new Guna.UI2.WinForms.Guna2Button();
             label7 = new Label();
             label6 = new Label();
+            label13 = new Label();
+            label14 = new Label();
             label5 = new Label();
             label11 = new Label();
             label12 = new Label();
@@ -90,9 +99,10 @@
             label3 = new Label();
             label1 = new Label();
             tb_name = new Guna.UI2.WinForms.Guna2TextBox();
-            toolTip1 = new ToolTip(components);
-            ((System.ComponentModel.ISupportInitialize)pb_homenum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb_phone).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pb_homenum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb_tienluong).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -100,80 +110,101 @@
             ((System.ComponentModel.ISupportInitialize)pb_avt).BeginInit();
             SuspendLayout();
             // 
-            // pb_homenum
-            // 
-            pb_homenum.Image = Properties.Resources.icons8_warning_96;
-            pb_homenum.Location = new Point(95, 301);
-            pb_homenum.Name = "pb_homenum";
-            pb_homenum.Size = new Size(25, 25);
-            pb_homenum.SizeMode = PictureBoxSizeMode.StretchImage;
-            pb_homenum.TabIndex = 97;
-            pb_homenum.TabStop = false;
-            pb_homenum.Visible = false;
-            // 
             // pb_phone
             // 
             pb_phone.Image = Properties.Resources.icons8_warning_96;
-            pb_phone.Location = new Point(245, 140);
+            pb_phone.Location = new Point(249, 138);
             pb_phone.Name = "pb_phone";
             pb_phone.Size = new Size(25, 25);
             pb_phone.SizeMode = PictureBoxSizeMode.StretchImage;
-            pb_phone.TabIndex = 96;
+            pb_phone.TabIndex = 181;
             pb_phone.TabStop = false;
             pb_phone.Visible = false;
+            // 
+            // pb_homenum
+            // 
+            pb_homenum.Image = Properties.Resources.icons8_warning_96;
+            pb_homenum.Location = new Point(96, 379);
+            pb_homenum.Name = "pb_homenum";
+            pb_homenum.Size = new Size(25, 25);
+            pb_homenum.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_homenum.TabIndex = 180;
+            pb_homenum.TabStop = false;
+            pb_homenum.Visible = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.icons8_warning_96;
+            pictureBox7.Location = new Point(249, 289);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(25, 25);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 179;
+            pictureBox7.TabStop = false;
+            pictureBox7.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.icons8_warning_96;
+            pictureBox3.Location = new Point(246, 218);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(25, 25);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 178;
+            pictureBox3.TabStop = false;
+            pictureBox3.Visible = false;
             // 
             // pb_tienluong
             // 
             pb_tienluong.Image = Properties.Resources.icons8_warning_96;
-            pb_tienluong.Location = new Point(245, 211);
+            pb_tienluong.Location = new Point(557, 251);
             pb_tienluong.Name = "pb_tienluong";
             pb_tienluong.Size = new Size(25, 25);
             pb_tienluong.SizeMode = PictureBoxSizeMode.StretchImage;
-            pb_tienluong.TabIndex = 95;
+            pb_tienluong.TabIndex = 177;
             pb_tienluong.TabStop = false;
             pb_tienluong.Visible = false;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.icons8_warning_96;
-            pictureBox5.Location = new Point(553, 142);
+            pictureBox5.Location = new Point(554, 129);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 93;
+            pictureBox5.TabIndex = 176;
             pictureBox5.TabStop = false;
             pictureBox5.Visible = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.icons8_warning_96;
-            pictureBox2.Location = new Point(553, 72);
+            pictureBox2.Location = new Point(554, 59);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(25, 25);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 92;
+            pictureBox2.TabIndex = 175;
             pictureBox2.TabStop = false;
             pictureBox2.Visible = false;
             // 
             // pb_name
             // 
             pb_name.Image = Properties.Resources.icons8_warning_96;
-            pb_name.Location = new Point(245, 72);
+            pb_name.Location = new Point(246, 59);
             pb_name.Name = "pb_name";
             pb_name.Size = new Size(25, 25);
             pb_name.SizeMode = PictureBoxSizeMode.StretchImage;
-            pb_name.TabIndex = 91;
+            pb_name.TabIndex = 174;
             pb_name.TabStop = false;
-            toolTip1.SetToolTip(pb_name, "Tên không hợp lệ (chứa ký tự đặc biệt hoặc số)");
             pb_name.Visible = false;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(126, 261);
+            label9.Location = new Point(127, 339);
             label9.Name = "label9";
             label9.Size = new Size(82, 20);
-            label9.TabIndex = 90;
+            label9.TabIndex = 173;
             label9.Text = "Tên Đường";
             // 
             // tb_street
@@ -192,7 +223,7 @@
             tb_street.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_street.ForeColor = Color.Black;
             tb_street.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_street.Location = new Point(129, 290);
+            tb_street.Location = new Point(130, 368);
             tb_street.Name = "tb_street";
             tb_street.PasswordChar = '\0';
             tb_street.PlaceholderForeColor = Color.Gray;
@@ -200,7 +231,7 @@
             tb_street.SelectedText = "";
             tb_street.ShadowDecoration.CustomizableEdges = customizableEdges2;
             tb_street.Size = new Size(113, 45);
-            tb_street.TabIndex = 89;
+            tb_street.TabIndex = 172;
             // 
             // btn_uploadImg
             // 
@@ -214,32 +245,31 @@
             btn_uploadImg.FillColor = Color.FromArgb(17, 34, 71);
             btn_uploadImg.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btn_uploadImg.ForeColor = Color.White;
-            btn_uploadImg.Location = new Point(347, 445);
+            btn_uploadImg.Location = new Point(348, 524);
             btn_uploadImg.Name = "btn_uploadImg";
             btn_uploadImg.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btn_uploadImg.Size = new Size(203, 29);
-            btn_uploadImg.TabIndex = 88;
+            btn_uploadImg.TabIndex = 171;
             btn_uploadImg.Text = "Upload Ảnh";
-            btn_uploadImg.Click += btn_uploadImg_Click_1;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(347, 299);
+            label8.Location = new Point(348, 378);
             label8.Name = "label8";
             label8.Size = new Size(35, 20);
-            label8.TabIndex = 87;
+            label8.TabIndex = 170;
             label8.Text = "Ảnh";
             // 
             // pb_avt
             // 
             pb_avt.Image = Properties.Resources.icons8_avatar_orther_96;
             pb_avt.InitialImage = Properties.Resources.icons8_avatar_orther_96;
-            pb_avt.Location = new Point(347, 322);
+            pb_avt.Location = new Point(348, 401);
             pb_avt.Name = "pb_avt";
             pb_avt.Size = new Size(203, 117);
             pb_avt.SizeMode = PictureBoxSizeMode.Zoom;
-            pb_avt.TabIndex = 86;
+            pb_avt.TabIndex = 169;
             pb_avt.TabStop = false;
             // 
             // btn_add
@@ -255,13 +285,13 @@
             btn_add.FillColor = Color.FromArgb(17, 34, 71);
             btn_add.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btn_add.ForeColor = Color.White;
-            btn_add.Location = new Point(344, 485);
+            btn_add.Location = new Point(345, 563);
             btn_add.Name = "btn_add";
             btn_add.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btn_add.Size = new Size(113, 48);
-            btn_add.TabIndex = 85;
-            btn_add.Text = "Thêm";
-            btn_add.Click += btn_add_Click_1;
+            btn_add.TabIndex = 168;
+            btn_add.Text = "Sửa";
+            btn_add.Click += btn_add_Click;
             // 
             // rdb_other
             // 
@@ -271,10 +301,10 @@
             rdb_other.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             rdb_other.CheckedState.InnerColor = Color.White;
             rdb_other.CheckedState.InnerOffset = -4;
-            rdb_other.Location = new Point(485, 202);
+            rdb_other.Location = new Point(486, 189);
             rdb_other.Name = "rdb_other";
             rdb_other.Size = new Size(62, 24);
-            rdb_other.TabIndex = 84;
+            rdb_other.TabIndex = 167;
             rdb_other.Text = "Khác";
             rdb_other.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             rdb_other.UncheckedState.BorderThickness = 2;
@@ -289,10 +319,10 @@
             rdb_female.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             rdb_female.CheckedState.InnerColor = Color.White;
             rdb_female.CheckedState.InnerOffset = -4;
-            rdb_female.Location = new Point(415, 202);
+            rdb_female.Location = new Point(416, 189);
             rdb_female.Name = "rdb_female";
             rdb_female.Size = new Size(50, 24);
-            rdb_female.TabIndex = 83;
+            rdb_female.TabIndex = 166;
             rdb_female.Text = "Nữ";
             rdb_female.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             rdb_female.UncheckedState.BorderThickness = 2;
@@ -307,10 +337,10 @@
             rdb_male.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             rdb_male.CheckedState.InnerColor = Color.White;
             rdb_male.CheckedState.InnerOffset = -4;
-            rdb_male.Location = new Point(347, 202);
+            rdb_male.Location = new Point(348, 189);
             rdb_male.Name = "rdb_male";
             rdb_male.Size = new Size(62, 24);
-            rdb_male.TabIndex = 82;
+            rdb_male.TabIndex = 165;
             rdb_male.Text = "Nam";
             rdb_male.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             rdb_male.UncheckedState.BorderThickness = 2;
@@ -320,10 +350,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(344, 179);
+            label2.Location = new Point(345, 166);
             label2.Name = "label2";
             label2.Size = new Size(65, 20);
-            label2.TabIndex = 81;
+            label2.TabIndex = 164;
             label2.Text = "Giới tính";
             // 
             // tb_city
@@ -342,7 +372,7 @@
             tb_city.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_city.ForeColor = Color.Black;
             tb_city.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_city.Location = new Point(126, 384);
+            tb_city.Location = new Point(127, 462);
             tb_city.Name = "tb_city";
             tb_city.PasswordChar = '\0';
             tb_city.PlaceholderForeColor = Color.Gray;
@@ -350,7 +380,7 @@
             tb_city.SelectedText = "";
             tb_city.ShadowDecoration.CustomizableEdges = customizableEdges8;
             tb_city.Size = new Size(113, 45);
-            tb_city.TabIndex = 80;
+            tb_city.TabIndex = 163;
             // 
             // tb_ward
             // 
@@ -368,7 +398,7 @@
             tb_ward.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_ward.ForeColor = Color.Black;
             tb_ward.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_ward.Location = new Point(36, 384);
+            tb_ward.Location = new Point(37, 462);
             tb_ward.Name = "tb_ward";
             tb_ward.PasswordChar = '\0';
             tb_ward.PlaceholderForeColor = Color.Gray;
@@ -376,7 +406,7 @@
             tb_ward.SelectedText = "";
             tb_ward.ShadowDecoration.CustomizableEdges = customizableEdges10;
             tb_ward.Size = new Size(84, 45);
-            tb_ward.TabIndex = 79;
+            tb_ward.TabIndex = 162;
             // 
             // tb_homenum
             // 
@@ -394,7 +424,7 @@
             tb_homenum.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_homenum.ForeColor = Color.Black;
             tb_homenum.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_homenum.Location = new Point(36, 290);
+            tb_homenum.Location = new Point(37, 368);
             tb_homenum.Name = "tb_homenum";
             tb_homenum.PasswordChar = '\0';
             tb_homenum.PlaceholderForeColor = Color.Gray;
@@ -402,8 +432,7 @@
             tb_homenum.SelectedText = "";
             tb_homenum.ShadowDecoration.CustomizableEdges = customizableEdges12;
             tb_homenum.Size = new Size(54, 45);
-            tb_homenum.TabIndex = 78;
-            tb_homenum.TextChanged += tb_homenum_TextChanged;
+            tb_homenum.TabIndex = 161;
             // 
             // tb_sodienthoai
             // 
@@ -421,7 +450,7 @@
             tb_sodienthoai.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_sodienthoai.ForeColor = Color.Black;
             tb_sodienthoai.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_sodienthoai.Location = new Point(36, 131);
+            tb_sodienthoai.Location = new Point(37, 129);
             tb_sodienthoai.Name = "tb_sodienthoai";
             tb_sodienthoai.PasswordChar = '\0';
             tb_sodienthoai.PlaceholderForeColor = Color.Gray;
@@ -429,15 +458,66 @@
             tb_sodienthoai.SelectedText = "";
             tb_sodienthoai.ShadowDecoration.CustomizableEdges = customizableEdges14;
             tb_sodienthoai.Size = new Size(203, 45);
-            tb_sodienthoai.TabIndex = 77;
-            tb_sodienthoai.TextChanged += tb_sodienthoai_TextChanged;
+            tb_sodienthoai.TabIndex = 158;
+            // 
+            // tb_chuyenmon
+            // 
+            tb_chuyenmon.BorderColor = Color.Black;
+            tb_chuyenmon.BorderRadius = 15;
+            tb_chuyenmon.BorderThickness = 0;
+            tb_chuyenmon.CustomizableEdges = customizableEdges15;
+            tb_chuyenmon.DefaultText = "";
+            tb_chuyenmon.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            tb_chuyenmon.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            tb_chuyenmon.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            tb_chuyenmon.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            tb_chuyenmon.FillColor = Color.Gainsboro;
+            tb_chuyenmon.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_chuyenmon.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_chuyenmon.ForeColor = Color.Black;
+            tb_chuyenmon.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_chuyenmon.Location = new Point(40, 280);
+            tb_chuyenmon.Name = "tb_chuyenmon";
+            tb_chuyenmon.PasswordChar = '\0';
+            tb_chuyenmon.PlaceholderForeColor = Color.Gray;
+            tb_chuyenmon.PlaceholderText = "";
+            tb_chuyenmon.SelectedText = "";
+            tb_chuyenmon.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            tb_chuyenmon.Size = new Size(203, 45);
+            tb_chuyenmon.TabIndex = 160;
+            // 
+            // tb_hocvi
+            // 
+            tb_hocvi.BorderColor = Color.Black;
+            tb_hocvi.BorderRadius = 15;
+            tb_hocvi.BorderThickness = 0;
+            tb_hocvi.CustomizableEdges = customizableEdges17;
+            tb_hocvi.DefaultText = "";
+            tb_hocvi.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            tb_hocvi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            tb_hocvi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            tb_hocvi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            tb_hocvi.FillColor = Color.Gainsboro;
+            tb_hocvi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_hocvi.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_hocvi.ForeColor = Color.Black;
+            tb_hocvi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_hocvi.Location = new Point(37, 209);
+            tb_hocvi.Name = "tb_hocvi";
+            tb_hocvi.PasswordChar = '\0';
+            tb_hocvi.PlaceholderForeColor = Color.Gray;
+            tb_hocvi.PlaceholderText = "";
+            tb_hocvi.SelectedText = "";
+            tb_hocvi.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            tb_hocvi.Size = new Size(203, 45);
+            tb_hocvi.TabIndex = 159;
             // 
             // tb_tienluong
             // 
             tb_tienluong.BorderColor = Color.Black;
             tb_tienluong.BorderRadius = 15;
             tb_tienluong.BorderThickness = 0;
-            tb_tienluong.CustomizableEdges = customizableEdges15;
+            tb_tienluong.CustomizableEdges = customizableEdges19;
             tb_tienluong.DefaultText = "";
             tb_tienluong.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tb_tienluong.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -448,23 +528,22 @@
             tb_tienluong.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_tienluong.ForeColor = Color.Black;
             tb_tienluong.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_tienluong.Location = new Point(36, 202);
+            tb_tienluong.Location = new Point(348, 242);
             tb_tienluong.Name = "tb_tienluong";
             tb_tienluong.PasswordChar = '\0';
             tb_tienluong.PlaceholderForeColor = Color.Gray;
             tb_tienluong.PlaceholderText = "";
             tb_tienluong.SelectedText = "";
-            tb_tienluong.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            tb_tienluong.ShadowDecoration.CustomizableEdges = customizableEdges20;
             tb_tienluong.Size = new Size(203, 45);
-            tb_tienluong.TabIndex = 76;
-            tb_tienluong.TextChanged += tb_tienluong_TextChanged;
+            tb_tienluong.TabIndex = 157;
             // 
             // tb_vitrilamviec
             // 
             tb_vitrilamviec.BorderColor = Color.Black;
             tb_vitrilamviec.BorderRadius = 15;
             tb_vitrilamviec.BorderThickness = 0;
-            tb_vitrilamviec.CustomizableEdges = customizableEdges17;
+            tb_vitrilamviec.CustomizableEdges = customizableEdges21;
             tb_vitrilamviec.DefaultText = "";
             tb_vitrilamviec.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tb_vitrilamviec.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -475,21 +554,21 @@
             tb_vitrilamviec.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_vitrilamviec.ForeColor = Color.Black;
             tb_vitrilamviec.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_vitrilamviec.Location = new Point(344, 251);
+            tb_vitrilamviec.Location = new Point(345, 314);
             tb_vitrilamviec.Name = "tb_vitrilamviec";
             tb_vitrilamviec.PasswordChar = '\0';
             tb_vitrilamviec.PlaceholderForeColor = Color.Gray;
             tb_vitrilamviec.PlaceholderText = "";
             tb_vitrilamviec.SelectedText = "";
-            tb_vitrilamviec.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            tb_vitrilamviec.ShadowDecoration.CustomizableEdges = customizableEdges22;
             tb_vitrilamviec.Size = new Size(203, 45);
-            tb_vitrilamviec.TabIndex = 75;
+            tb_vitrilamviec.TabIndex = 156;
             // 
             // btn_cancel
             // 
             btn_cancel.BorderRadius = 15;
             btn_cancel.BorderThickness = 1;
-            btn_cancel.CustomizableEdges = customizableEdges19;
+            btn_cancel.CustomizableEdges = customizableEdges23;
             btn_cancel.DisabledState.BorderColor = Color.DarkGray;
             btn_cancel.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_cancel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -497,74 +576,92 @@
             btn_cancel.FillColor = Color.White;
             btn_cancel.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btn_cancel.ForeColor = Color.Black;
-            btn_cancel.Location = new Point(126, 485);
+            btn_cancel.Location = new Point(127, 563);
             btn_cancel.Name = "btn_cancel";
-            btn_cancel.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btn_cancel.ShadowDecoration.CustomizableEdges = customizableEdges24;
             btn_cancel.Size = new Size(113, 48);
-            btn_cancel.TabIndex = 74;
+            btn_cancel.TabIndex = 155;
             btn_cancel.Text = "Hủy";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(129, 358);
+            label7.Location = new Point(130, 436);
             label7.Name = "label7";
             label7.Size = new Size(79, 20);
-            label7.TabIndex = 73;
+            label7.TabIndex = 154;
             label7.Text = "Thành phố";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(36, 358);
+            label6.Location = new Point(37, 436);
             label6.Name = "label6";
             label6.Size = new Size(60, 20);
-            label6.TabIndex = 72;
+            label6.TabIndex = 153;
             label6.Text = "Phường";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(37, 106);
+            label13.Name = "label13";
+            label13.Size = new Size(97, 20);
+            label13.TabIndex = 145;
+            label13.Text = "Số điện thoại";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(40, 257);
+            label14.Name = "label14";
+            label14.Size = new Size(91, 20);
+            label14.TabIndex = 147;
+            label14.Text = "Chuyên môn";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(36, 261);
+            label5.Location = new Point(37, 339);
             label5.Name = "label5";
             label5.Size = new Size(54, 20);
-            label5.TabIndex = 71;
+            label5.TabIndex = 152;
             label5.Text = "Số nhà";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(36, 108);
+            label11.Location = new Point(37, 186);
             label11.Name = "label11";
-            label11.Size = new Size(97, 20);
-            label11.TabIndex = 66;
-            label11.Text = "Số điện thoại";
+            label11.Size = new Size(51, 20);
+            label11.TabIndex = 146;
+            label11.Text = "Học vị";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(344, 108);
+            label12.Location = new Point(345, 95);
             label12.Name = "label12";
             label12.Size = new Size(158, 20);
-            label12.TabIndex = 70;
+            label12.TabIndex = 151;
             label12.Text = "Ngày bắt đầu làm việc";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(344, 38);
+            label4.Location = new Point(345, 25);
             label4.Name = "label4";
             label4.Size = new Size(74, 20);
-            label4.TabIndex = 69;
+            label4.TabIndex = 150;
             label4.Text = "Ngày sinh";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(36, 179);
+            label10.Location = new Point(348, 219);
             label10.Name = "label10";
             label10.Size = new Size(80, 20);
-            label10.TabIndex = 65;
+            label10.TabIndex = 144;
             label10.Text = "Tiền lương";
             // 
             // dtp_beginwork
@@ -572,17 +669,17 @@
             dtp_beginwork.BackColor = Color.Transparent;
             dtp_beginwork.BorderRadius = 15;
             dtp_beginwork.Checked = true;
-            dtp_beginwork.CustomizableEdges = customizableEdges21;
+            dtp_beginwork.CustomizableEdges = customizableEdges25;
             dtp_beginwork.FillColor = Color.White;
             dtp_beginwork.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dtp_beginwork.Format = DateTimePickerFormat.Short;
-            dtp_beginwork.Location = new Point(344, 131);
+            dtp_beginwork.Location = new Point(345, 118);
             dtp_beginwork.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtp_beginwork.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtp_beginwork.Name = "dtp_beginwork";
-            dtp_beginwork.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            dtp_beginwork.ShadowDecoration.CustomizableEdges = customizableEdges26;
             dtp_beginwork.Size = new Size(203, 45);
-            dtp_beginwork.TabIndex = 68;
+            dtp_beginwork.TabIndex = 149;
             dtp_beginwork.TextAlign = HorizontalAlignment.Right;
             dtp_beginwork.Value = new DateTime(2024, 3, 15, 10, 40, 5, 575);
             // 
@@ -591,36 +688,36 @@
             dtp_birth.BackColor = Color.Transparent;
             dtp_birth.BorderRadius = 15;
             dtp_birth.Checked = true;
-            dtp_birth.CustomizableEdges = customizableEdges23;
+            dtp_birth.CustomizableEdges = customizableEdges27;
             dtp_birth.FillColor = Color.White;
             dtp_birth.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dtp_birth.Format = DateTimePickerFormat.Short;
-            dtp_birth.Location = new Point(344, 61);
+            dtp_birth.Location = new Point(345, 48);
             dtp_birth.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtp_birth.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtp_birth.Name = "dtp_birth";
-            dtp_birth.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            dtp_birth.ShadowDecoration.CustomizableEdges = customizableEdges28;
             dtp_birth.Size = new Size(203, 45);
-            dtp_birth.TabIndex = 67;
+            dtp_birth.TabIndex = 148;
             dtp_birth.TextAlign = HorizontalAlignment.Right;
             dtp_birth.Value = new DateTime(2024, 3, 15, 10, 40, 5, 575);
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(344, 228);
+            label3.Location = new Point(345, 291);
             label3.Name = "label3";
             label3.Size = new Size(40, 20);
-            label3.TabIndex = 64;
+            label3.TabIndex = 143;
             label3.Text = "Vị trí";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(36, 38);
+            label1.Location = new Point(37, 25);
             label1.Name = "label1";
             label1.Size = new Size(56, 20);
-            label1.TabIndex = 63;
+            label1.TabIndex = 142;
             label1.Text = "Họ Tên";
             // 
             // tb_name
@@ -628,7 +725,7 @@
             tb_name.BorderColor = Color.Black;
             tb_name.BorderRadius = 15;
             tb_name.BorderThickness = 0;
-            tb_name.CustomizableEdges = customizableEdges25;
+            tb_name.CustomizableEdges = customizableEdges29;
             tb_name.DefaultText = "";
             tb_name.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tb_name.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -639,32 +736,25 @@
             tb_name.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tb_name.ForeColor = Color.Black;
             tb_name.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tb_name.Location = new Point(36, 61);
+            tb_name.Location = new Point(37, 48);
             tb_name.Name = "tb_name";
             tb_name.PasswordChar = '\0';
             tb_name.PlaceholderForeColor = Color.Gray;
             tb_name.PlaceholderText = "";
             tb_name.SelectedText = "";
-            tb_name.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            tb_name.ShadowDecoration.CustomizableEdges = customizableEdges30;
             tb_name.Size = new Size(203, 45);
-            tb_name.TabIndex = 62;
-            tb_name.TextChanged += tb_name_TextChanged;
+            tb_name.TabIndex = 141;
             // 
-            // toolTip1
-            // 
-            toolTip1.AutomaticDelay = 0;
-            toolTip1.AutoPopDelay = 0;
-            toolTip1.InitialDelay = 500;
-            toolTip1.ReshowDelay = 100;
-            // 
-            // NewGuard
+            // EditNurse
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(612, 577);
-            Controls.Add(pb_homenum);
+            ClientSize = new Size(618, 636);
             Controls.Add(pb_phone);
+            Controls.Add(pb_homenum);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox3);
             Controls.Add(pb_tienluong);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox2);
@@ -683,11 +773,15 @@
             Controls.Add(tb_ward);
             Controls.Add(tb_homenum);
             Controls.Add(tb_sodienthoai);
+            Controls.Add(tb_chuyenmon);
+            Controls.Add(tb_hocvi);
             Controls.Add(tb_tienluong);
             Controls.Add(tb_vitrilamviec);
             Controls.Add(btn_cancel);
             Controls.Add(label7);
             Controls.Add(label6);
+            Controls.Add(label13);
+            Controls.Add(label14);
             Controls.Add(label5);
             Controls.Add(label11);
             Controls.Add(label12);
@@ -698,10 +792,12 @@
             Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(tb_name);
-            Name = "NewGuard";
-            Text = "NewGuard";
-            ((System.ComponentModel.ISupportInitialize)pb_homenum).EndInit();
+            Name = "EditNurse";
+            Text = "EditNurse";
             ((System.ComponentModel.ISupportInitialize)pb_phone).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_homenum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_tienluong).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -713,10 +809,11 @@
 
         #endregion
 
-        private PictureBox pb_homenum;
         private PictureBox pb_phone;
+        private PictureBox pb_homenum;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox3;
         private PictureBox pb_tienluong;
-        private ToolTip toolTip1;
         private PictureBox pictureBox5;
         private PictureBox pictureBox2;
         private PictureBox pb_name;
@@ -734,11 +831,15 @@
         private Guna.UI2.WinForms.Guna2TextBox tb_ward;
         private Guna.UI2.WinForms.Guna2TextBox tb_homenum;
         private Guna.UI2.WinForms.Guna2TextBox tb_sodienthoai;
+        private Guna.UI2.WinForms.Guna2TextBox tb_chuyenmon;
+        private Guna.UI2.WinForms.Guna2TextBox tb_hocvi;
         private Guna.UI2.WinForms.Guna2TextBox tb_tienluong;
         private Guna.UI2.WinForms.Guna2TextBox tb_vitrilamviec;
         private Guna.UI2.WinForms.Guna2Button btn_cancel;
         private Label label7;
         private Label label6;
+        private Label label13;
+        private Label label14;
         private Label label5;
         private Label label11;
         private Label label12;
