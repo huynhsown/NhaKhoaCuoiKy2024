@@ -178,6 +178,8 @@
             // 
             // data_thuoc
             // 
+            data_thuoc.AllowUserToAddRows = false;
+            data_thuoc.AllowUserToDeleteRows = false;
             data_thuoc.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -397,6 +399,8 @@
             SuaThuoc.MinimumWidth = 6;
             SuaThuoc.Name = "SuaThuoc";
             SuaThuoc.ReadOnly = true;
+            SuaThuoc.Text = "Xem";
+            SuaThuoc.UseColumnTextForButtonValue = true;
             // 
             // XoaThuoc
             // 
@@ -406,6 +410,8 @@
             XoaThuoc.ReadOnly = true;
             XoaThuoc.Resizable = DataGridViewTriState.True;
             XoaThuoc.SortMode = DataGridViewColumnSortMode.Automatic;
+            XoaThuoc.Text = "Xóa";
+            XoaThuoc.UseColumnTextForButtonValue = true;
             // 
             // Medicine
             // 

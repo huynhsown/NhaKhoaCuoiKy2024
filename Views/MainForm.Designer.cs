@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -49,16 +46,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelSideMenu = new Panel();
-
             btn_hslv = new Guna.UI2.WinForms.Guna2Button();
             btn_doanhthu = new Guna.UI2.WinForms.Guna2Button();
             btn_danhgia = new Guna.UI2.WinForms.Guna2Button();
-            btn_logout = new Guna.UI2.WinForms.Guna2Button();
             btn_medicine = new Guna.UI2.WinForms.Guna2Button();
             btn_appointment = new Guna.UI2.WinForms.Guna2Button();
             btn_service = new Guna.UI2.WinForms.Guna2Button();
@@ -72,6 +66,7 @@
             panelIcon = new Panel();
             pictureBox1 = new PictureBox();
             panelMain = new Panel();
+            btn_logout = new Guna.UI2.WinForms.Guna2Button();
             panelSideMenu.SuspendLayout();
             panel_btn_employee.SuspendLayout();
             panelIcon.SuspendLayout();
@@ -82,11 +77,10 @@
             // 
             panelSideMenu.AutoScroll = true;
             panelSideMenu.BackColor = Color.FromArgb(17, 34, 71);
-
+            panelSideMenu.Controls.Add(btn_logout);
             panelSideMenu.Controls.Add(btn_hslv);
             panelSideMenu.Controls.Add(btn_doanhthu);
             panelSideMenu.Controls.Add(btn_danhgia);
-            panelSideMenu.Controls.Add(btn_logout);
             panelSideMenu.Controls.Add(btn_medicine);
             panelSideMenu.Controls.Add(btn_appointment);
             panelSideMenu.Controls.Add(btn_service);
@@ -99,14 +93,14 @@
             panelSideMenu.ForeColor = Color.White;
             panelSideMenu.Location = new Point(0, 0);
             panelSideMenu.Name = "panelSideMenu";
-            panelSideMenu.Size = new Size(250, 853);
+            panelSideMenu.Size = new Size(250, 946);
             panelSideMenu.TabIndex = 0;
             // 
             // btn_hslv
             // 
             btn_hslv.BackColor = Color.Transparent;
             btn_hslv.BorderRadius = 8;
-            btn_hslv.CustomizableEdges = customizableEdges1;
+            btn_hslv.CustomizableEdges = customizableEdges3;
             btn_hslv.DisabledState.BorderColor = Color.DarkGray;
             btn_hslv.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_hslv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -122,8 +116,8 @@
             btn_hslv.Margin = new Padding(10);
             btn_hslv.Name = "btn_hslv";
             btn_hslv.Padding = new Padding(10, 0, 0, 0);
-            btn_hslv.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_hslv.Size = new Size(229, 56);
+            btn_hslv.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_hslv.Size = new Size(250, 56);
             btn_hslv.TabIndex = 10;
             btn_hslv.Text = "Hiệu Suất Làm Việc";
             btn_hslv.TextAlign = HorizontalAlignment.Left;
@@ -133,7 +127,7 @@
             // 
             btn_doanhthu.BackColor = Color.Transparent;
             btn_doanhthu.BorderRadius = 8;
-            btn_doanhthu.CustomizableEdges = customizableEdges3;
+            btn_doanhthu.CustomizableEdges = customizableEdges5;
             btn_doanhthu.DisabledState.BorderColor = Color.DarkGray;
             btn_doanhthu.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_doanhthu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -149,8 +143,8 @@
             btn_doanhthu.Margin = new Padding(10);
             btn_doanhthu.Name = "btn_doanhthu";
             btn_doanhthu.Padding = new Padding(10, 0, 0, 0);
-            btn_doanhthu.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btn_doanhthu.Size = new Size(229, 56);
+            btn_doanhthu.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btn_doanhthu.Size = new Size(250, 56);
             btn_doanhthu.TabIndex = 9;
             btn_doanhthu.Text = "Doanh thu";
             btn_doanhthu.TextAlign = HorizontalAlignment.Left;
@@ -160,7 +154,7 @@
             // 
             btn_danhgia.BackColor = Color.Transparent;
             btn_danhgia.BorderRadius = 8;
-            btn_danhgia.CustomizableEdges = customizableEdges5;
+            btn_danhgia.CustomizableEdges = customizableEdges7;
             btn_danhgia.DisabledState.BorderColor = Color.DarkGray;
             btn_danhgia.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_danhgia.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -176,52 +170,18 @@
             btn_danhgia.Margin = new Padding(10);
             btn_danhgia.Name = "btn_danhgia";
             btn_danhgia.Padding = new Padding(10, 0, 0, 0);
-            btn_danhgia.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btn_danhgia.Size = new Size(229, 56);
+            btn_danhgia.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btn_danhgia.Size = new Size(250, 56);
             btn_danhgia.TabIndex = 8;
             btn_danhgia.Text = "Đánh giá";
             btn_danhgia.TextAlign = HorizontalAlignment.Left;
             btn_danhgia.Click += btn_danhgia_Click;
-
-            // btn_logout
-            // 
-            btn_logout.BackColor = Color.Transparent;
-            btn_logout.BorderRadius = 5;
-            btn_logout.CustomizableEdges = customizableEdges1;
-            btn_logout.DisabledState.BorderColor = Color.DarkGray;
-            btn_logout.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_logout.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_logout.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_logout.Dock = DockStyle.Bottom;
-            btn_logout.FillColor = Color.Transparent;
-            btn_logout.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_logout.ForeColor = Color.White;
-            btn_logout.Image = Properties.Resources.icons8_power_off_button_100;
-            btn_logout.ImageAlign = HorizontalAlignment.Left;
-            btn_logout.ImageOffset = new Point(10, 0);
-            btn_logout.Location = new Point(0, 797);
-            btn_logout.Margin = new Padding(10);
-            btn_logout.Name = "btn_logout";
-            btn_logout.Padding = new Padding(10, 0, 0, 0);
-            btn_logout.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_logout.Size = new Size(250, 56);
-            btn_logout.TabIndex = 8;
-            btn_logout.Text = "Đăng xuất";
-            btn_logout.TextAlign = HorizontalAlignment.Left;
-            btn_logout.Click += btn_logout_Click;
-            btn_logout.MouseEnter += btn_logout_MouseEnter;
-            btn_logout.MouseLeave += btn_logout_MouseLeave;
-
             // 
             // btn_medicine
             // 
             btn_medicine.BackColor = Color.Transparent;
             btn_medicine.BorderRadius = 8;
-
-            btn_medicine.CustomizableEdges = customizableEdges7;
-
-            btn_medicine.CustomizableEdges = customizableEdges3;
-
+            btn_medicine.CustomizableEdges = customizableEdges5;
             btn_medicine.DisabledState.BorderColor = Color.DarkGray;
             btn_medicine.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_medicine.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -237,13 +197,8 @@
             btn_medicine.Margin = new Padding(10);
             btn_medicine.Name = "btn_medicine";
             btn_medicine.Padding = new Padding(10, 0, 0, 0);
-
-            btn_medicine.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btn_medicine.Size = new Size(229, 56);
-
-            btn_medicine.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_medicine.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btn_medicine.Size = new Size(250, 56);
-
             btn_medicine.TabIndex = 7;
             btn_medicine.Text = "Thuốc";
             btn_medicine.TextAlign = HorizontalAlignment.Left;
@@ -253,11 +208,7 @@
             // 
             btn_appointment.BackColor = Color.Transparent;
             btn_appointment.BorderRadius = 8;
-
-            btn_appointment.CustomizableEdges = customizableEdges7;
-
-            btn_appointment.CustomizableEdges = customizableEdges3;
-
+            btn_appointment.CustomizableEdges = customizableEdges5;
             btn_appointment.DisabledState.BorderColor = Color.DarkGray;
             btn_appointment.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_appointment.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -273,13 +224,8 @@
             btn_appointment.Margin = new Padding(10);
             btn_appointment.Name = "btn_appointment";
             btn_appointment.Padding = new Padding(10, 0, 0, 0);
-
-            btn_appointment.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btn_appointment.Size = new Size(229, 56);
-
-            btn_appointment.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_appointment.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btn_appointment.Size = new Size(250, 56);
-
             btn_appointment.TabIndex = 7;
             btn_appointment.Text = "Lịch hẹn";
             btn_appointment.TextAlign = HorizontalAlignment.Left;
@@ -289,11 +235,7 @@
             // 
             btn_service.BackColor = Color.Transparent;
             btn_service.BorderRadius = 8;
-
-            btn_service.CustomizableEdges = customizableEdges9;
-
-            btn_service.CustomizableEdges = customizableEdges5;
-
+            btn_service.CustomizableEdges = customizableEdges7;
             btn_service.DisabledState.BorderColor = Color.DarkGray;
             btn_service.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_service.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -309,13 +251,8 @@
             btn_service.Margin = new Padding(10);
             btn_service.Name = "btn_service";
             btn_service.Padding = new Padding(10, 0, 0, 0);
-
-            btn_service.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btn_service.Size = new Size(229, 56);
-
-            btn_service.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btn_service.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btn_service.Size = new Size(250, 56);
-
             btn_service.TabIndex = 6;
             btn_service.Text = "Dịch vụ";
             btn_service.TextAlign = HorizontalAlignment.Left;
@@ -330,7 +267,7 @@
             panel_btn_employee.Dock = DockStyle.Top;
             panel_btn_employee.Location = new Point(0, 269);
             panel_btn_employee.Name = "panel_btn_employee";
-            panel_btn_employee.Size = new Size(229, 242);
+            panel_btn_employee.Size = new Size(250, 242);
             panel_btn_employee.TabIndex = 5;
             panel_btn_employee.Visible = false;
             // 
@@ -338,11 +275,7 @@
             // 
             btn_protector.BackColor = Color.Transparent;
             btn_protector.BorderRadius = 8;
-
-            btn_protector.CustomizableEdges = customizableEdges11;
-
-            btn_protector.CustomizableEdges = customizableEdges7;
-
+            btn_protector.CustomizableEdges = customizableEdges9;
             btn_protector.DisabledState.BorderColor = Color.DarkGray;
             btn_protector.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_protector.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -358,13 +291,8 @@
             btn_protector.Margin = new Padding(10);
             btn_protector.Name = "btn_protector";
             btn_protector.Padding = new Padding(45, 0, 0, 0);
-
-            btn_protector.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btn_protector.Size = new Size(229, 56);
-
-            btn_protector.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btn_protector.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btn_protector.Size = new Size(250, 56);
-
             btn_protector.TabIndex = 7;
             btn_protector.Text = "Bảo vệ";
             btn_protector.TextAlign = HorizontalAlignment.Left;
@@ -374,11 +302,7 @@
             // 
             btn_nurse.BackColor = Color.Transparent;
             btn_nurse.BorderRadius = 8;
-
-            btn_nurse.CustomizableEdges = customizableEdges13;
-
-            btn_nurse.CustomizableEdges = customizableEdges9;
-
+            btn_nurse.CustomizableEdges = customizableEdges11;
             btn_nurse.DisabledState.BorderColor = Color.DarkGray;
             btn_nurse.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_nurse.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -394,13 +318,8 @@
             btn_nurse.Margin = new Padding(10);
             btn_nurse.Name = "btn_nurse";
             btn_nurse.Padding = new Padding(45, 0, 0, 0);
-
-            btn_nurse.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btn_nurse.Size = new Size(229, 56);
-
-            btn_nurse.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btn_nurse.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btn_nurse.Size = new Size(250, 56);
-
             btn_nurse.TabIndex = 6;
             btn_nurse.Text = "Y tá";
             btn_nurse.TextAlign = HorizontalAlignment.Left;
@@ -410,11 +329,7 @@
             // 
             btn_employee_Doctor.BackColor = Color.Transparent;
             btn_employee_Doctor.BorderRadius = 8;
-
-            btn_employee_Doctor.CustomizableEdges = customizableEdges15;
-
-            btn_employee_Doctor.CustomizableEdges = customizableEdges11;
- 
+            btn_employee_Doctor.CustomizableEdges = customizableEdges13;
             btn_employee_Doctor.DisabledState.BorderColor = Color.DarkGray;
             btn_employee_Doctor.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_employee_Doctor.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -430,13 +345,8 @@
             btn_employee_Doctor.Margin = new Padding(10);
             btn_employee_Doctor.Name = "btn_employee_Doctor";
             btn_employee_Doctor.Padding = new Padding(45, 0, 0, 0);
- 
-            btn_employee_Doctor.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btn_employee_Doctor.Size = new Size(229, 56);
-
-            btn_employee_Doctor.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btn_employee_Doctor.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btn_employee_Doctor.Size = new Size(250, 56);
- 
             btn_employee_Doctor.TabIndex = 5;
             btn_employee_Doctor.Text = "Bác sĩ";
             btn_employee_Doctor.TextAlign = HorizontalAlignment.Left;
@@ -446,11 +356,7 @@
             // 
             btn_employee.BackColor = Color.Transparent;
             btn_employee.BorderRadius = 8;
- 
-            btn_employee.CustomizableEdges = customizableEdges17;
-
-            btn_employee.CustomizableEdges = customizableEdges13;
- 
+            btn_employee.CustomizableEdges = customizableEdges15;
             btn_employee.DisabledState.BorderColor = Color.DarkGray;
             btn_employee.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_employee.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -466,12 +372,8 @@
             btn_employee.Margin = new Padding(10);
             btn_employee.Name = "btn_employee";
             btn_employee.Padding = new Padding(10, 0, 0, 0);
-            btn_employee.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btn_employee.Size = new Size(229, 56);
-
-            btn_employee.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btn_employee.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btn_employee.Size = new Size(250, 56);
- 
             btn_employee.TabIndex = 4;
             btn_employee.Text = "Nhân viên";
             btn_employee.TextAlign = HorizontalAlignment.Left;
@@ -483,11 +385,7 @@
             // 
             btn_patient.BackColor = Color.Transparent;
             btn_patient.BorderRadius = 8;
- 
-            btn_patient.CustomizableEdges = customizableEdges19;
-
-            btn_patient.CustomizableEdges = customizableEdges15;
- 
+            btn_patient.CustomizableEdges = customizableEdges17;
             btn_patient.DisabledState.BorderColor = Color.DarkGray;
             btn_patient.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_patient.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -503,13 +401,8 @@
             btn_patient.Margin = new Padding(10);
             btn_patient.Name = "btn_patient";
             btn_patient.Padding = new Padding(10, 0, 0, 0);
-
-            btn_patient.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btn_patient.Size = new Size(229, 56);
-
-            btn_patient.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btn_patient.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btn_patient.Size = new Size(250, 56);
-
             btn_patient.TabIndex = 3;
             btn_patient.Text = "Bệnh nhân";
             btn_patient.TextAlign = HorizontalAlignment.Left;
@@ -517,41 +410,11 @@
             btn_patient.MouseEnter += btn_patient_MouseEnter;
             btn_patient.MouseLeave += btn_patient_MouseLeave;
             // 
-
-            // btn_exit
-            // 
-            btn_exit.BackColor = Color.Transparent;
-            btn_exit.BorderRadius = 5;
-            btn_exit.CustomizableEdges = customizableEdges21;
-            btn_exit.DisabledState.BorderColor = Color.DarkGray;
-            btn_exit.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_exit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_exit.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_exit.Dock = DockStyle.Bottom;
-            btn_exit.FillColor = Color.Transparent;
-            btn_exit.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_exit.ForeColor = Color.DarkGray;
-            btn_exit.Image = Properties.Resources.icons8_exit_100;
-            btn_exit.ImageAlign = HorizontalAlignment.Left;
-            btn_exit.ImageOffset = new Point(10, 0);
-            btn_exit.Location = new Point(0, 847);
-            btn_exit.Margin = new Padding(10);
-            btn_exit.Name = "btn_exit";
-            btn_exit.Padding = new Padding(10, 0, 0, 0);
-            btn_exit.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btn_exit.Size = new Size(229, 56);
-            btn_exit.TabIndex = 2;
-            btn_exit.Text = "Thoát";
-            btn_exit.TextAlign = HorizontalAlignment.Left;
-            btn_exit.Click += btn_exit_Click;
-            btn_exit.MouseEnter += btn_exit_MouseEnter;
-            btn_exit.MouseLeave += btn_exit_MouseLeave;
-            // 
             // btn_home
             // 
             btn_home.BackColor = Color.Transparent;
             btn_home.BorderRadius = 8;
-            btn_home.CustomizableEdges = customizableEdges23;
+            btn_home.CustomizableEdges = customizableEdges19;
             btn_home.DisabledState.BorderColor = Color.DarkGray;
             btn_home.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_home.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -567,8 +430,8 @@
             btn_home.Margin = new Padding(10);
             btn_home.Name = "btn_home";
             btn_home.Padding = new Padding(10, 0, 0, 0);
-            btn_home.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            btn_home.Size = new Size(229, 56);
+            btn_home.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btn_home.Size = new Size(250, 56);
             btn_home.TabIndex = 1;
             btn_home.Text = "Trang chủ";
             btn_home.TextAlign = HorizontalAlignment.Left;
@@ -582,7 +445,7 @@
             panelIcon.Dock = DockStyle.Top;
             panelIcon.Location = new Point(0, 0);
             panelIcon.Name = "panelIcon";
-            panelIcon.Size = new Size(229, 101);
+            panelIcon.Size = new Size(250, 101);
             panelIcon.TabIndex = 0;
             // 
             // pictureBox1
@@ -591,7 +454,7 @@
             pictureBox1.Image = Properties.Resources.dental2;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(229, 101);
+            pictureBox1.Size = new Size(250, 101);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -601,14 +464,42 @@
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(250, 0);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1232, 853);
+            panelMain.Size = new Size(1232, 946);
             panelMain.TabIndex = 1;
+            // 
+            // btn_logout
+            // 
+            btn_logout.BackColor = Color.Transparent;
+            btn_logout.BorderRadius = 8;
+            btn_logout.CustomizableEdges = customizableEdges1;
+            btn_logout.DisabledState.BorderColor = Color.DarkGray;
+            btn_logout.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_logout.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_logout.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_logout.Dock = DockStyle.Bottom;
+            btn_logout.FillColor = Color.Transparent;
+            btn_logout.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_logout.ForeColor = Color.White;
+            btn_logout.Image = (Image)resources.GetObject("btn_logout.Image");
+            btn_logout.ImageAlign = HorizontalAlignment.Left;
+            btn_logout.ImageOffset = new Point(10, 0);
+            btn_logout.Location = new Point(0, 890);
+            btn_logout.Margin = new Padding(10);
+            btn_logout.Name = "btn_logout";
+            btn_logout.Padding = new Padding(10, 0, 0, 0);
+            btn_logout.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_logout.Size = new Size(250, 56);
+            btn_logout.TabIndex = 11;
+            btn_logout.Text = "Hiệu Suất Làm Việc";
+            btn_logout.TextAlign = HorizontalAlignment.Left;
+            btn_logout.MouseEnter += btn_logout_MouseEnter;
+            btn_logout.MouseLeave += btn_logout_MouseLeave;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1482, 853);
+            ClientSize = new Size(1482, 946);
             Controls.Add(panelMain);
             Controls.Add(panelSideMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -643,8 +534,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_danhgia;
         private Guna.UI2.WinForms.Guna2Button btn_doanhthu;
         private Guna.UI2.WinForms.Guna2Button btn_hslv;
-
         private Guna.UI2.WinForms.Guna2Button btn_logout;
-
     }
 }

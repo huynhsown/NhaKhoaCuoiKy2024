@@ -634,6 +634,7 @@
             btn_cancel.Size = new Size(113, 48);
             btn_cancel.TabIndex = 113;
             btn_cancel.Text = "Hủy";
+            btn_cancel.Click += btn_cancel_Click;
             // 
             // label7
             // 
@@ -848,8 +849,11 @@
             Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(tb_name);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "EditDoctor";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EditDoctor";
+            Load += EditDoctor_Load_1;
             ((System.ComponentModel.ISupportInitialize)pb_phone).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();

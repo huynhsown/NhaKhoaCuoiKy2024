@@ -30,26 +30,7 @@ namespace NhaKhoaCuoiKy.Views.Employee.Medicines
             this.userAccount = userAccount;
         }
 
-        void loadForm(Form form)
-        {
-            FormBackGround formBackGround = new FormBackGround(mainForm);
-            try
-            {
-                using (form)
-                {
-                    formBackGround.Owner = mainForm;
-                    formBackGround.Show();
-                    form.Owner = formBackGround;
-                    form.ShowDialog();
-                    formBackGround.Dispose();
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Đã xảy ra lỗi! Vui lòng thử lại.", "Thông báo",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+
 
         private void button_themmoi_Click(object sender, EventArgs e)
         {

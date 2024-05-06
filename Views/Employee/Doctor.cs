@@ -88,7 +88,7 @@ namespace NhaKhoaCuoiKy.Views.Employee
         private void Doctor_Load(object sender, EventArgs e)
         {
 
-         
+
 
 
             loadAllDoctor();

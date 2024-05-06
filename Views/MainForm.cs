@@ -39,7 +39,7 @@ namespace NhaKhoaCuoiKy.Views
         private void MainForm_Load(object sender, EventArgs e)
         {
             panel_btn_employee.AutoSize = true;
-            if(userAccount.decentralization != 0)
+            if (userAccount.decentralization != 0)
             {
                 btn_employee.Visible = false;
                 btn_employee.Enabled = false;
@@ -205,11 +205,10 @@ namespace NhaKhoaCuoiKy.Views
         }
         private void btn_appointment_Click(object sender, EventArgs e)
         {
-            if(userAccount.decentralization == 1)
+            if (userAccount.decentralization == 1)
             {
                 SetAppointment sa = new SetAppointment(userAccount.employeeID, this);
-                sa.btn_back.Visible = false;
-                sa.btn_back.Enabled = false;
+
                 closeAllPanel();
                 openChildForm(sa);
                 return;
@@ -233,7 +232,7 @@ namespace NhaKhoaCuoiKy.Views
             openChildForm(revenue = new Revenue(this));
         }
 
-        
+
 
         private void btn_hslv_Click(object sender, EventArgs e)
         {
@@ -241,7 +240,7 @@ namespace NhaKhoaCuoiKy.Views
             hslv?.Close();
             openChildForm(hslv = new HieuSuatLamViec(this));
         }
-        
+
         private void btn_logout_MouseEnter(object sender, EventArgs e)
         {
             btn_logout.FillColor = Color.Red;
