@@ -121,6 +121,9 @@
   <data name="icons8-doctor-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-doctor-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-waving-hand-emoji-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-waving-hand-emoji-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-add-new-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-add-new-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,6 +132,15 @@
   </data>
   <data name="icons8-nurse-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-nurse-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-eye-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-eye-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-power-off-button-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-power-off-button-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-medicine-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-medicine-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-service-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-service-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +151,29 @@
   <data name="icons8-search-500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-search-500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-medicine-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-medicine-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-back-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-back-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-save-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-save-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-appointment-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-appointment-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_LoGIN-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\IMG_LoGIN-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-avatar_male-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-avatar_male-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-back-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-back-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-print-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-print-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-guard-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-guard-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,6 +205,9 @@
   <data name="icons8-employee-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-employee-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-invisible-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-invisible-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-search-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-search-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -189,6 +219,9 @@
   </data>
   <data name="icons8-patient-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-patient-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_LoGIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\IMG_LoGIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-dental-filling-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-dental-filling-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,7 +235,7 @@
   <data name="icons8-search-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Image\icons8-search-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-medicine-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\Image\icons8-medicine-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-invoice-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\Image\icons8-invoice-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -528,8 +528,11 @@
             Controls.Add(label1);
             Controls.Add(tb_medicineid);
             Controls.Add(tb_name);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "NewMedicine";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "NewMedicine";
+            Load += NewMedicine_Load;
             ((System.ComponentModel.ISupportInitialize)pb_name).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_importprice).EndInit();
